@@ -1,5 +1,3 @@
-package vetores;
-
 import java.util.Scanner;
 
 public class Atividade5 {
