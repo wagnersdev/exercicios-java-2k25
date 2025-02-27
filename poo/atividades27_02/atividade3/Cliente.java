@@ -1,4 +1,4 @@
-package poo.atividade3;
+package poo.atividades27_02.atividade3;
 class Cliente{
     private String nome;
     private String email;

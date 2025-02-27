@@ -1,5 +1,5 @@
 
-package ArrayList;
+package arrayList;
 import java.util.Collections;
 import java.util.Scanner;
 

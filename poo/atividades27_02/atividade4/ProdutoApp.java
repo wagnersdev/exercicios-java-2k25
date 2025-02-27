@@ -1,4 +1,4 @@
-package poo.atividade4;
+package poo.atividades27_02.atividade4;
 
 import java.util.ArrayList;
 import java.util.Scanner;
