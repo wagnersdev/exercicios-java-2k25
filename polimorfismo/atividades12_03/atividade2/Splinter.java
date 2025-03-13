@@ -1,38 +1,17 @@
 package polimorfismo.atividades12_03.atividade2;
 
-public class Splinter extends ArCondicionado{
-    private String tipo;
+class Splinter extends ArCondicionado {
     private String tamanho;
+    private String tipos;
 
-
-    public Splinter(String codigo, String marca, String btu, String tipo, String tamanho) {
-        super(codigo, marca, btu);
-        this.tipo = tipo;
+    public Splinter(String codigo, String marca, String btu, String temDefeito, String tipoDefeito, String tamanho, String tipos) {
+        super(codigo, marca, btu, temDefeito, tipoDefeito);
         this.tamanho = tamanho;
+        this.tipos = tipos;
     }
 
-
-    public String getTipo() {
-        return tipo;
+    @Override
+    public String toString() {
+        return super.toString() + ", Modelo: Splinter, Tamanho: " + tamanho + ", Tipos: " + tipos;
     }
-
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-
-    public String getTamanho() {
-        return tamanho;
-    }
-
-
-    public void setTamanho(String tamanho) {
-        this.tamanho = tamanho;
-    }
-
-    
-
-    
-    
 }

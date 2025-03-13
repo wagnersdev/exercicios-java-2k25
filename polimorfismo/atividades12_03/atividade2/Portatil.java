@@ -1,27 +1,17 @@
 package polimorfismo.atividades12_03.atividade2;
 
-public class Portatil extends ArCondicionado{
-    private int voltagem;
+class Portatil extends ArCondicionado {
+    private String voltagem;
     private String cor;
 
-    
-    public Portatil(String codigo, String marca, String btu, int voltagem, String cor) {
-        super(codigo, marca, btu);
+    public Portatil(String codigo, String marca, String btu, String temDefeito, String tipoDefeito, String voltagem, String cor) {
+        super(codigo, marca, btu, temDefeito, tipoDefeito);
         this.voltagem = voltagem;
-        this.cor = cor;
-    }
-    public int getVoltagem() {
-        return voltagem;
-    }
-    public void setVoltagem(int voltagem) {
-        this.voltagem = voltagem;
-    }
-    public String getCor() {
-        return cor;
-    }
-    public void setCor(String cor) {
         this.cor = cor;
     }
 
-    
+    @Override
+    public String toString() {
+        return super.toString() + ", Tipo: Portátil, Voltagem: " + voltagem + ", Cor: " + cor;
+    }
 }

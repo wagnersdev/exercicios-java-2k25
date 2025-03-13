@@ -24,9 +24,11 @@ public class Gato extends Animal{
 
     @Override
     public String toString() {
-        return "Gato" +
-                "\nNome: "+ getNome() +
-                "\nCor = " + cor + "\n Patas: "+ getPatas();
+        return "Nome: "+ getNome() +
+                "\n" +
+                "Cor:" + cor +
+                "\n"+
+                "Patas: "+ getPatas();
     }
 }
 

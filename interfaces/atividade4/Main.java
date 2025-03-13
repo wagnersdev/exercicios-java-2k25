@@ -10,7 +10,7 @@ public class Main {
         ArrayList<Cachorro> cachorros = new ArrayList<>();
         ArrayList<Gato> gatos = new ArrayList<>();
         int op = 0;
-        while (true){
+        while (true) {
             System.out.println("==== MENU ====");
             System.out.println("1 - CADASTRAR ANIMAL");
             System.out.println("2 - EMITIR SOM DO ANIMAL");
@@ -18,19 +18,19 @@ public class Main {
             System.out.println("Digite uma opção: ");
             op = sc.nextInt();
 
-            switch (op){
+            switch (op) {
                 case 1:
                     System.out.println("1 - CACHORRO");
                     System.out.println("2 - GATO");
-                    System.out.println("Digite uma opção de animal");
+                    System.out.println("Digite uma opção de animal: ");
                     int opAnimal = sc.nextInt();
                     sc.nextLine();
 
-                    if(opAnimal == 1) {
+                    if (opAnimal == 1) {
                         System.out.println("Nome: ");
                         String nomeCachorro = sc.nextLine();
 
-                        System.out.println("Quanitdade de patas: ");
+                        System.out.println("Quantidade de patas: ");
                         int qtdPatas = sc.nextInt();
                         sc.nextLine();
 
@@ -51,7 +51,6 @@ public class Main {
                         String corGato = sc.nextLine();
 
                         gatos.add(new Gato(nomeGato, qtdPatasGato, corGato));
-
                     }
                     break;
 
@@ -76,19 +75,21 @@ public class Main {
                     }
 
                     System.out.print("Digite o nome do animal para buscar: ");
-                    String nomeBusca = sc.nextLine();
                     sc.nextLine();
+                    String nomeBusca = sc.nextLine();
 
                     boolean encontrou = false;
 
-                    for (Cachorro cachorroList : cachorros) {
-                        if (cachorroList.getNome().equalsIgnoreCase(nomeBusca)) {
-                            System.out.println("Cachorro encontrado: " + cachorroList);
-                            cachorroList.emitirSom();
+                    // Busca em cachorros
+                    for (Cachorro cachorro : cachorros) {
+                        if (cachorro.getNome().equalsIgnoreCase(nomeBusca)) {
+                            System.out.println("Cachorro encontrado: " + cachorro);
+                            cachorro.emitirSom();
                             encontrou = true;
                             break;
                         }
                     }
+
 
                     if (!encontrou) {
                         for (Gato gato : gatos) {
@@ -100,9 +101,19 @@ public class Main {
                             }
                         }
                     }
+
+                    if (!encontrou) {
+                        System.out.println("Nenhum animal com o nome '" + nomeBusca + "' foi encontrado.");
+                    }
                     break;
 
+                case 3:
+                    System.out.println("Saindo do programa...");
+                    sc.close();
+                    return;
 
+                default:
+                    System.out.println("Opção inválida. Tente novamente.");
             }
         }
     }

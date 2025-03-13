@@ -4,34 +4,20 @@ public class ArCondicionado {
     private String codigo;
     private String marca;
     private String btu;
+    private String temDefeito;
+    private String tipoDefeito;
 
-
-    public ArCondicionado( String codigo, String marca, String btu) {
+    public ArCondicionado(String codigo, String marca, String btu, String temDefeito, String tipoDefeito) {
         this.codigo = codigo;
         this.marca = marca;
         this.btu = btu;
-    }
-  
-    
-    public String getCodigo() {
-        return codigo;
-    }
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
-    }
-    public String getMarca() {
-        return marca;
-    }
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-    public String getBtu() {
-        return btu;
-    }
-    public void setBtu(String btu) {
-        this.btu = btu;
+        this.temDefeito = temDefeito;
+        this.tipoDefeito = tipoDefeito;
     }
 
-
-    
+    @Override
+    public String toString() {
+        return "Código: " + codigo + ", Marca: " + marca + ", BTU: " + btu +
+                ", Tem Defeito: " + temDefeito + ", Tipo de Defeito: " + tipoDefeito;
+    }
 }
