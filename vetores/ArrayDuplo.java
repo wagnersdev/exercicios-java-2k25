@@ -1,3 +1,5 @@
+package vetores;
+
 public class ArrayDuplo {
     public static void main(String[] args) {
 
