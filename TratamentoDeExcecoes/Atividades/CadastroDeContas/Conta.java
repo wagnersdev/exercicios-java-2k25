@@ -1,29 +1,30 @@
 package TratamentoDeExcecoes.Atividades.CadastroDeContas;
 
+import TratamentoDeExcecoes.Atividades.CadastroDeContas.Exceptions.DadoInvalidoException;
+
 import java.util.InputMismatchException;
 
-public class Conta {
-    private int numero;
+public class Conta{
+    private String numero;
     private String nomeTitular;
     private double saldo;
 
-    public Conta(int numero, String nomeTitular, double saldo) {
+    public Conta(String numero, String nomeTitular, double saldo) {
         this.numero = numero;
         this.nomeTitular = nomeTitular;
         this.saldo = saldo;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
-        try {
-            this.numero = numero;
+    public void setNumero(String numero) {
 
-        }catch (InputMismatchException e){
-            System.out.println("Erro! O número inválido.");
+        if (numero == null || numero.isEmpty()) {
+            throw new DadoInvalidoException("Erro! O número da conta não pode estar vazio.");
         }
+        this.numero = numero;
     }
 
     public String getNomeTitular() {
@@ -31,11 +32,10 @@ public class Conta {
     }
 
     public void setNomeTitular(String nomeTitular) {
-        try {
-            this.nomeTitular = nomeTitular;
-        }catch (NumberFormatException e){
-            System.out.println("Erro! O nome inválido.");
+        if (nomeTitular == null || nomeTitular.trim().isEmpty()) {
+            throw new DadoInvalidoException("Erro! O nome do titular não pode estar vazio.");
         }
+        this.nomeTitular = nomeTitular;
     }
 
     public double getSaldo() {
@@ -43,10 +43,17 @@ public class Conta {
     }
 
     public void setSaldo(double saldo) {
-        try {
-            this.saldo = saldo;
-        }catch (InputMismatchException e){
-            System.out.println("Erro! Saldo inválido");
+        if (saldo < 0) {
+            throw new DadoInvalidoException("Erro! O saldo não pode ser negativo.");
         }
+        this.saldo = saldo;
+    }
+
+    @Override
+    public String toString() {
+        return "\nConta: " +
+                "\nNúmero = " + numero +
+                "\nNome Titular = " + nomeTitular+
+                "\nSaldo = " + saldo;
     }
 }
