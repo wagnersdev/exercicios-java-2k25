@@ -1,3 +1,5 @@
+package poo.exemplo;
+
 public class PessoaApp {
     public static void main(String[] args) {
         Pessoa p1 = new Pessoa("Wagner", "7199993");

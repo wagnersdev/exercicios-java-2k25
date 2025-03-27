@@ -36,7 +36,7 @@ public class Main {
 
                 case 2:
                     for (Livro livro: livros){
-                        System.out.println(livro);
+                       livro.exibirDetalhes();
                     }
                     break;
 

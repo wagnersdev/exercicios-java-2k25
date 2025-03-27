@@ -1,3 +1,5 @@
+package poo.exemplo;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
