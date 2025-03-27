@@ -36,54 +36,69 @@ public class Main {
                     break;
 
                 case 2:
-                    for (Livro livro: livros){
-                       livro.exibirDetalhes();
+                    if (livros.isEmpty()){
+                        System.out.println("Lista de livros vazia.");
+                    }else {
+                        for (Livro livro: livros){
+                            livro.exibirDetalhes();
+                        }
                     }
+
                     break;
 
                 case 3:
-                    sc.nextLine();
-                    System.out.println("Informe o titulo livro que deseja alterar: ");
-                    String livroAlterado = sc.nextLine();
+                    if(livros.isEmpty()){
+                        System.out.println("Lista de livros vazia.");
+                    }else {
+                        sc.nextLine();
+                        System.out.println("Informe o titulo livro que deseja alterar: ");
+                        String livroAlterado = sc.nextLine();
 
-                    for(int i = 0; i < livros.size(); i++){
-                        Livro livro = livros.get(i);
-                        if(livro.getTitulo().equalsIgnoreCase(livroAlterado)){
+                        for(int i = 0; i < livros.size(); i++){
+                            Livro livro = livros.get(i);
+                            if(livro.getTitulo().equalsIgnoreCase(livroAlterado)){
 
-                            System.out.println("Novo titulo: ");
-                            String novoTitulo = sc.nextLine();
-                            livro.setTitulo(novoTitulo);
+                                System.out.println("Novo titulo: ");
+                                String novoTitulo = sc.nextLine();
+                                livro.setTitulo(novoTitulo);
 
-                            System.out.println("Novo autor: ");
-                            String novoAutor = sc.nextLine();
-                            livro.setAutor(novoAutor);
+                                System.out.println("Novo autor: ");
+                                String novoAutor = sc.nextLine();
+                                livro.setAutor(novoAutor);
 
-                            System.out.println("Novo ano de publicacao: ");
-                            int novoAnoPublicacao = sc.nextInt();
-                            livro.setAnoPublicacao(novoAnoPublicacao);
+                                System.out.println("Novo ano de publicacao: ");
+                                int novoAnoPublicacao = sc.nextInt();
+                                livro.setAnoPublicacao(novoAnoPublicacao);
 
-                            System.out.println("Novo preço: ");
-                            double novoPreco = sc.nextDouble();
-                            livro.setPreco(novoPreco);
-                        }else{
-                            System.out.println("Livro nao encontrado");
+                                System.out.println("Novo preço: ");
+                                double novoPreco = sc.nextDouble();
+                                livro.setPreco(novoPreco);
+
+                                System.out.println("Livro alterado com sucesso.");
+                            }else{
+                                System.out.println("Livro não encontrado.");
+                            }
                         }
                     }
-                    break;
-
+                        break;
 
                 case 4:
-                    sc.nextLine();
-                    System.out.println("Informe o nome do livro que deseja excluir: ");
-                    String livroExcluido = sc.nextLine();
 
-                    for (int i = 0; i < livros.size(); i++) {
-                        Livro livro = livros.get(i);
-                        if (livro.getTitulo().equalsIgnoreCase(livroExcluido)) {
-                            livros.remove(i);
-                            System.out.println("Livro excluído!");
-                        }else{
-                            System.out.println("Livro nao encontrado!!");
+                    if(livros.isEmpty()){
+                        System.out.println("Lista de livros vazia.");
+                    }else {
+                        sc.nextLine();
+                        System.out.println("Informe o nome do livro que deseja excluir: ");
+                        String livroExcluido = sc.nextLine();
+
+                        for (int i = 0; i < livros.size(); i++) {
+                            Livro livro = livros.get(i);
+                            if (livro.getTitulo().equalsIgnoreCase(livroExcluido)) {
+                                livros.remove(i);
+                                System.out.println("Livro excluído!");
+                            }else{
+                                System.out.println("Livro nao encontrado!!");
+                            }
                         }
                     }
                     break;
