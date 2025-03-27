@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bac80c4b-eb9d-470f-aeae-4ac68001561e" name="Changes" comment="continuação">
-      <change beforePath="$PROJECT_DIR$/poo/exemplo/ExemploArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/exemplo/ExemploArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poo/exemplo/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/exemplo/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poo/exemplo/PessoaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/exemplo/PessoaApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtividadeDeRevisao/CadastroDeLivros/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/AtividadeDeRevisao/CadastroDeLivros/Livro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtividadeDeRevisao/CadastroDeLivros/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/AtividadeDeRevisao/CadastroDeLivros/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +54,7 @@
     &quot;Application.AlunoApp.executor&quot;: &quot;Run&quot;,
     &quot;Application.ArrayListNumero.executor&quot;: &quot;Run&quot;,
     &quot;Application.Atividade5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AtividadeDeRevisao.CadastroDeLivros.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.ClienteApp.executor&quot;: &quot;Run&quot;,
     &quot;Application.ControleArCondicionado.executor&quot;: &quot;Run&quot;,
     &quot;Application.FuncionarioApp.executor&quot;: &quot;Run&quot;,

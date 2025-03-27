@@ -14,6 +14,7 @@ public class Main {
             System.out.println("2 - EXIBIR LIVROS");
             System.out.println("3 - ALTERAR INFORMAÇÕES DO LIVRO");
             System.out.println("4 - REMOVER LIVRO");
+            System.out.println("5 - SAIR DO PROGRAMA");
             System.out.println("ESCOLHA UMA OPÇÃO: ");
             int op = sc.nextInt();
 
@@ -81,7 +82,6 @@ public class Main {
                         if (livro.getTitulo().equalsIgnoreCase(livroExcluido)) {
                             livros.remove(i);
                             System.out.println("Livro excluído!");
-                            break;
                         }else{
                             System.out.println("Livro nao encontrado!!");
                         }
@@ -90,10 +90,12 @@ public class Main {
 
                 case 5:
                     System.out.println("Programa finalizado.");
-                    sc.close();
-                    break;
+                    return;
+                default:
+                    System.out.println("opcao invalida");
             }
 
         }
     }
+
 }

@@ -16,7 +16,7 @@ public class Livro {
 
 
     public void exibirDetalhes(){
-        System.out.println("Titulo: " + titulo + "\nAutor: " + autor +
+        System.out.println("\nTitulo: " + titulo + "\nAutor: " + autor +
                 "\nAno de publicação: " + anoPublicacao + "\nPreço: " + preco);
     }
 
