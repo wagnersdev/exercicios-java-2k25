@@ -4,7 +4,6 @@ public class Cachorro extends Animal{
 
     @Override
     String fazerSom() {
-        System.out.println("AUAU");
-        return "";
+        return "AUAU";
     }
 }

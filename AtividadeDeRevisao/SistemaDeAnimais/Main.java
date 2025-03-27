@@ -1,18 +1,13 @@
 package AtividadeDeRevisao.SistemaDeAnimais;
 
-import java.util.ArrayList;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> animais = new ArrayList<>();
 
-        animais.add(new Cachorro().fazerSom());
-        animais.add(new Gato().fazerSom());
-        animais.add(new Vaca().fazerSom());
-
-        for(String a: animais){
-            System.out.println(a);
-        }
+        String[] animais = {new Cachorro().fazerSom(), new Gato().fazerSom(), new Vaca().fazerSom()};
+        System.out.println(Arrays.toString(animais));
 
     }
 }
