@@ -18,7 +18,7 @@ public class Aviao {
         sc.nextLine();
 
         if (qtdAviao > 4) {
-            System.out.println("O limite máximo é de 4 aviões!");
+            System.out.println("O limite maximo é de 4 aviões!");
             return;
         }
 
@@ -27,7 +27,7 @@ public class Aviao {
             int numeroAviao = sc.nextInt();
             avioes.add(numeroAviao);
 
-            System.out.print("Digite a quantidade de assentos disponíveis para este avião: ");
+            System.out.print("Digite a quantidade de assentos disponiveis para este avião: ");
             int assentos = sc.nextInt();
             sc.nextLine();
             qtdAssentos.add(assentos);
@@ -55,7 +55,7 @@ public class Aviao {
             return;
         }
 
-        System.out.print("Digite o número do avião a ser reservado: ");
+        System.out.print("Digite o número do aviao a ser reservado: ");
         int numeroAviao = sc.nextInt();
         sc.nextLine();
 
@@ -78,7 +78,7 @@ public class Aviao {
         int assentosAtualizados = qtdAssentos.get(indiceAviao) - 1;
         qtdAssentos.set(indiceAviao, assentosAtualizados);
 
-        System.out.println("Reserva realizada com sucesso para o passageiro " + nome + " no avião " + numeroAviao);
+        System.out.println("Reserva realizada com sucesso para o passageiro " + nome + " no aviao " + numeroAviao);
     }
 
     
@@ -86,7 +86,7 @@ public class Aviao {
         System.out.print("Digite o número do avião: ");
         int numeroAviao = sc.nextInt();
 
-        System.out.println("Passageiros do avião " + numeroAviao + ":");
+        System.out.println("Passageiros do aviao " + numeroAviao + ":");
         for (Passageiro p : passageiros) {
             if (p.getNumeroAviao() == numeroAviao) {
                 System.out.println("- " + p.getNome());
@@ -104,7 +104,7 @@ public class Aviao {
 
         for (Passageiro p : passageiros) {
             if (p.getNome().equalsIgnoreCase(nomePassageiro)) {
-                System.out.println("O passageiro " + nomePassageiro + " está no avião: " + p.getNumeroAviao());
+                System.out.println("O passageiro " + nomePassageiro + " está no aviao: " + p.getNumeroAviao());
                 return;
             }
         }

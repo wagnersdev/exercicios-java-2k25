@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bac80c4b-eb9d-470f-aeae-4ac68001561e" name="Changes" comment="att sistema de animais">
-      <change beforePath="$PROJECT_DIR$/out/production/exercicios-java-2k25/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercicios-java-2k25/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exercicios-java-2k25/AtividadeDeRevisao/SistemaDeAnimais/Cachorro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercicios-java-2k25/AtividadeDeRevisao/SistemaDeAnimais/Cachorro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exercicios-java-2k25/AtividadeDeRevisao/SistemaDeAnimais/Gato.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercicios-java-2k25/AtividadeDeRevisao/SistemaDeAnimais/Gato.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exercicios-java-2k25/AtividadeDeRevisao/SistemaDeAnimais/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercicios-java-2k25/AtividadeDeRevisao/SistemaDeAnimais/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/exercicios-java-2k25/AtividadeDeRevisao/SistemaDeAnimais/Vaca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercicios-java-2k25/AtividadeDeRevisao/SistemaDeAnimais/Vaca.class" afterDir="false" />
-    </list>
+    <list default="true" id="bac80c4b-eb9d-470f-aeae-4ac68001561e" name="Changes" comment="att sistema de animais" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,41 +45,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.AlunoApp.executor": "Run",
-    "Application.ArrayListNumero.executor": "Run",
-    "Application.Atividade5.executor": "Run",
-    "Application.AtividadeDeRevisao.CadastroDeLivros.Main.executor": "Run",
-    "Application.AtividadeDeRevisao.SistemaDeAnimais.Main.executor": "Run",
-    "Application.ClienteApp.executor": "Run",
-    "Application.ControleArCondicionado.executor": "Run",
-    "Application.FuncionarioApp.executor": "Run",
-    "Application.ImparesePares.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Main2.executor": "Run",
-    "Application.ProvaSenai.Main.executor": "Run",
-    "Application.TarefaApp.executor": "Run",
-    "Application.TesteArrayList.executor": "Run",
-    "Application.TesteArrayListNumero.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/wagne/IdeaProjects/exercicios-java-2k25",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.AlunoApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayListNumero.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Atividade5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AtividadeDeRevisao.CadastroDeLivros.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AtividadeDeRevisao.SistemaDeAnimais.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClienteApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ControleArCondicionado.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FuncionarioApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ImparesePares.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProvaSenai.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TarefaApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TesteArrayList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TesteArrayListNumero.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wagne/IdeaProjects/exercicios-java-2k25&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ProvaSenai" />
