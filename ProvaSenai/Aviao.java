@@ -109,7 +109,7 @@ public class Aviao {
             }
         }
 
-        System.out.println("Passageiro não encontrado!");
+        System.out.println("Não há reservas realizadas para este passageiro!");
 
     }
 }
