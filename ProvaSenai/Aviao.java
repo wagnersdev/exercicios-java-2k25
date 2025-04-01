@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Aviao {
+    Scanner sc = new Scanner(System.in);
 
     private ArrayList<Integer> avioes = new ArrayList<>();
     private ArrayList<Integer> qtdAssentos = new ArrayList<>();
     private ArrayList<Passageiro> passageiros = new ArrayList<>();
     private int maxReservas = 20;
-    private Scanner sc = new Scanner(System.in);
 
     
     public void registrarNumeroAviao() {
