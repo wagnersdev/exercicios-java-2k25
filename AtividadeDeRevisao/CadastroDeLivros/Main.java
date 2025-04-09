@@ -105,6 +105,7 @@ public class Main {
 
                 case 5:
                     System.out.println("Programa finalizado.");
+                    sc.close();
                     return;
                 default:
                     System.out.println("opcao invalida");

@@ -1,4 +1,4 @@
-package arrayList;
+package ArrayList;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -65,6 +65,7 @@ public class cadastroTelefonico {
                     
                     case 4:
                         System.out.println("Finalizado: ");
+                        sc.close();
                         break;
                     default:
                         break;

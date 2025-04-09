@@ -22,5 +22,7 @@ public class CadastroDeIdade {
             System.out.println("Programa finalizado");
         }
 
+        sc.close();
+
     }
 }

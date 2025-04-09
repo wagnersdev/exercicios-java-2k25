@@ -7,7 +7,7 @@ public class Exemplo {
 
         }catch (ArithmeticException e){
             System.out.println("Erro: Divisão por zero não permitida!");
-
+            
         }finally {
             System.out.println("Finalizando o programa...");
         }

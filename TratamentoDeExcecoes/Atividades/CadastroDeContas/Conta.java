@@ -2,8 +2,6 @@ package TratamentoDeExcecoes.Atividades.CadastroDeContas;
 
 import TratamentoDeExcecoes.Atividades.CadastroDeContas.Exceptions.DadoInvalidoException;
 
-import java.util.InputMismatchException;
-
 public class Conta{
     private String numero;
     private String nomeTitular;

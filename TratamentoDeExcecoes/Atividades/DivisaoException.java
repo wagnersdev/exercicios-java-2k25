@@ -22,5 +22,7 @@ public class DivisaoException {
         }finally {
             System.out.println("Programa finalizado...");
         }
+
+        sc.close();
     }
 }
